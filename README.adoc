@@ -1,0 +1,19 @@
+= Pom.xml to generate JaCoCo reports
+
+Simple pom.xml project to help with report generation of offline instrumeted classes of Narayana project.
+
+== How to run
+
+Simply run 
+
+```
+mvn clean install -Ddir.with.exec=path/to/dir/with/exec/files
+```
+where you need to say where `*.exec` files resides.
+
+== What does do
+
+* downloads Narayana in specified ver
+* takes all exec files from `dir.with.exec` and merge it to `target//jacoco.exec` file
+* generate reports based on downloaded Narayana and merged exec file
+
