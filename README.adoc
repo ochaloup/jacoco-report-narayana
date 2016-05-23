@@ -14,6 +14,6 @@ where you need to say where `*.exec` files resides.
 == What does do
 
 * downloads Narayana in specified ver
-* takes all exec files from `dir.with.exec` and merge it to `target//jacoco.exec` file
+* takes all exec files from `dir.with.exec` and merge it to `target/jacoco.exec` file
 * generate reports based on downloaded Narayana and merged exec file
 
